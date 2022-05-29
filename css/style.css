@@ -104,6 +104,18 @@ a{
     color: var(--text-color);
     text-align: center;
     padding: 40px;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
 }
 
 .textoDescripcion{
@@ -256,10 +268,14 @@ a{
 
 .cardProductos__img {
     width: 100%;
+    transition: width 0,5s;
+}
+.cardProductos__img:hover {
+    width: 105%;
 }
 
 .button {
-    background-color: var(--primary);
+    background-image: linear-gradient(to right, #95d0b1 , #39c37b);
     border: none;
     color: white;
     padding: 12px 30px;
