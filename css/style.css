@@ -1,0 +1,330 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    /* Colours */
+    --primary:#95D0B1;
+    --secondary: #37AE88;
+    --text-color: #424242;
+    --box-color:#F0F0F0;
+
+    /* Fonts Families */
+    --font-principal: 'Montserrat', sans-serif;
+    --font-titel: 'Pacifico', cursive;
+
+    /* Fonts Sizes */
+    --text-large: 70px;
+    --text-medium: 23px;
+    --text-small: 17px;
+    --text-smaller: 15px;
+
+}
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* End Reset CSS */
+
+/* Header */
+
+header {
+    align-content: center;
+    margin-top: 20px;
+    grid-area: header;
+}
+.flexHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* End Header */
+
+/* Nav Style */
+
+.listaNav{
+    display: inline;
+    margin: 45px;
+}
+
+.textoNav{
+    font-family: var(--font-principal);
+    font-size: var(--text-medium);
+    color: #000;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* End Nav Style */
+
+/* Main */
+main {
+    margin: 0px;
+    grid-area: main;
+}
+
+/* End Main */
+
+/* Varied */
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.tituloIndex{
+    font-family: var(--font-titel);
+    font-size: var(--text-large);
+    color: #ffffff;
+    text-shadow: 0.5px 0.5px 2px #000;
+    text-align: center;
+}
+
+.textoDescripcionIndex{
+    font-family: var(--font-principal);
+    font-size: 25px;
+    color: var(--text-color);
+    text-align: center;
+    padding: 40px;
+}
+
+.textoDescripcion{
+    font-family: var(--font-principal);
+    font-size: var(--text-small);
+    color: var(--text-color);
+    text-align: left;
+    margin: 20px 10px 10px 10px;
+}
+.textoTitulo{
+    font-family: var(--font-principal);
+    font-size: var(--text-medium);
+    color: var(--secondary);
+    text-align: left;
+    margin: 20px 10px 10px 10px;
+    text-transform: uppercase;
+    
+}
+
+.textoTituloCentrado{
+    font-family: var(--font-principal);
+    font-size: var(--text-medium);
+    color: var(--secondary);
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+    
+}
+
+.imgPastelera {
+    width: 300px;
+}
+
+.logo{
+    max-width: 85px;
+}
+
+.fondoRotador {
+    background-image: url("../img/imgrotador-1.jpg");
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fondoRotadorInterno {
+    background-image: url("../img/imgrotador-2.jpg");
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.separador{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.imgSeparador {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+}
+
+
+.gridImagenesProductos{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 50px;
+    column-gap: 20px;
+    padding: 40px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* End Varied */
+
+/* Secciones */
+
+.seccionesProductos {
+    width: 1000px;
+    height: 350;
+    justify-content: center;
+    padding: 30px;
+    background-color: var(--box-color);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.seccionesPedidos {
+    justify-content: center;
+    padding: 50px;
+    background-color: var(--box-color);
+    margin: 50px 70px 100px 70px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
+}
+.seccionesContacto {
+    width: 600px;
+    height: 850;
+    justify-content: center;
+    padding: 30px;
+    background-color: var(--box-color);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+/* End Secciones */
+
+/* Cards Products Index */
+
+.cardProductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+.cardProductos__box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 25px;
+}
+
+.cardProductos__img {
+    width: 100%;
+}
+
+.button {
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--text-small);
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 12px;
+    text-transform: uppercase;
+    margin: 30px 0px 0px 0px;
+}
+
+/* Fin Cards Products Index */
+
+/* Footer */
+
+.todoFooter{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 30px;
+    justify-content: space-around;
+    grid-area: footer;
+    column-gap: 10px;
+}
+
+.textoFooter{
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--text-smaller);
+    color: var(--text-color);
+    list-style-type: none;
+    text-align: left;
+}
+
+.textoFooter__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--text-medium);
+    color: var(--text-color);
+    text-align: left;
+    font-weight:bolder;
+}
+
+/* End Footer */
+
+/* Mobile Styles */
+
+@media screen and (max-width: 425px) {
+    .cardProductos {
+        flex-direction: column;
+    }
+    .todoFooter{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        row-gap: 25px;
+    }
+    .textoFooter{
+        text-align: center;
+    }
+    .textoFooter__titulo{
+        text-align: center;
+    }
+    .gridImagenesProductos{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+}
