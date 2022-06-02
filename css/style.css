@@ -15,6 +15,7 @@
     --font-titel: 'Pacifico', cursive;
 
     /* Fonts Sizes */
+    --text-xlarge: 90px;
     --text-large: 70px;
     --text-medium: 23px;
     --text-small: 17px;
@@ -85,14 +86,14 @@ main {
     gap: 5px;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--text-color);
 }
 
 .tituloIndex{
     font-family: var(--font-titel);
-    font-size: var(--text-large);
+    font-size: var(--text-xlarge);
     color: #ffffff;
     text-shadow: 0.5px 0.5px 2px #000;
     text-align: center;
@@ -125,6 +126,7 @@ a{
     text-align: left;
     margin: 20px 10px 10px 10px;
 }
+
 .textoTitulo{
     font-family: var(--font-principal);
     font-size: var(--text-medium);
@@ -147,6 +149,7 @@ a{
 
 .imgPastelera {
     width: 300px;
+    margin-left: 60px;
 }
 
 .logo{
@@ -235,14 +238,35 @@ a{
     align-self: center;
     align-content: center;
 }
-.seccionesContacto {
-    width: 600px;
-    height: 850;
-    justify-content: center;
+.seccionesContactoCard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 500px;
     padding: 30px;
     background-color: var(--box-color);
     margin: 20px;
     border-radius: 20px;
+}
+
+.seccionesContacto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 30px;
+    margin: 20px;
+}
+
+.seccionesNosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 30px;
+    margin: 60px 120px 60px 120px;
 }
 
 /* End Secciones */
@@ -290,6 +314,42 @@ a{
 }
 
 /* Fin Cards Products Index */
+
+/* Cards Products Pagina Productos */
+
+.cardProductosInternos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 50px;
+    background-color: var(--box-color);
+    border-radius: 20px;
+    margin: 80px;
+}
+
+.imgProductosInternos {
+    width: 300px;
+    margin: 10px;
+}
+
+.textoDescripcionProductos{
+    font-family: var(--font-principal);
+    font-size: var(--text-small);
+    color: var(--text-color);
+    text-align: left;
+    margin: 20px 0px 10px 40px;
+}
+
+.textoTituloProductos{
+    font-family: var(--font-principal);
+    font-size: var(--text-medium);
+    color: var(--secondary);
+    text-align: left;
+    margin: 20px 0px 10px 40px;
+    text-transform: uppercase;
+    
+}
 
 /* Footer */
 
@@ -342,5 +402,37 @@ a{
     .gridImagenesProductos{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
+    }
+    .imgProductosInternos {
+        width: 100%;
+    }
+    .cardProductosInternos {
+        flex-direction: column;
+    }
+    .textoTituloProductos{
+        text-align: center;
+        margin: 20px 10px 20px 10px;
+    }
+    .textoDescripcionProductos{
+        margin: 20px 10px 20px 10px;
+    }
+    .tituloIndex{
+        font-size: var(--text-large);
+    }
+    .imgPastelera {
+        width: 100%;
+        margin: 20px 10px 10px 10px;
+    }
+    .seccionesNosotros {
+        flex-direction: column;
+        padding: 30px;
+        margin: 60px 10px 60px 10px;
+    }
+    .seccionesContactoCard {
+        width: 100%;
+        margin: 0px;
+    }
+    .seccionesContacto {
+        margin: 0px;
     }
 }

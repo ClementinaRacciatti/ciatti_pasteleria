@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/Favicon.png">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Ciatti Pasteleria</title>
 </head>
 <body class="grid">
@@ -20,16 +22,15 @@
             <nav class="textoNav">
                 <ul>
                     <li class="listaNav">
-                        <a href="./pages/productos.html">productos</a>
+                        <a href="./pages/productos.html" class="link-dark">productos</a>
                     </li>
                     <li class="listaNav">
-                        <a href="./pages/pedidos.html">pedidos</a>
+                        <a href="./pages/pedidos.html" class="link-dark">pedidos</a></li>
+                    <li class="listaNav">
+                        <a href="./pages/nosotros.html" class="link-dark">nosotros</a>
                     </li>
                     <li class="listaNav">
-                        <a href="./pages/nosotros.html">nosotros</a>
-                    </li>
-                    <li class="listaNav">
-                        <a href="./pages/contacto.html">contacto</a>
+                        <a href="./pages/contacto.html" class="link-dark">contacto</a>
                     </li>
                 </ul>
             </nav>
@@ -37,11 +38,36 @@
     </header>
 <!-- end navigation bar -->
     <main>
-        <section class="fondoRotador">
-            <a href="./pages/productos.html">
-                <h2 class="tituloIndex">Galletitas Decoradas</h1>
-            </a>  
-        </section>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/imgrotador-1.jpg" class="d-block w-100" alt="Galletitas Unicornio">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="tituloIndex">Galletitas Decoradas</h5>
+                  </div>
+               </div>
+              <div class="carousel-item">
+                <img src="./img/imgrotador-3.jpg" class="d-block w-100" alt="Macarrons">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="tituloIndex">Macarons</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/imgrotador-4.jpg" class="d-block w-100" alt="Torta Roja">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="tituloIndex">Tortas</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         <section class="separador">
             <div>
                 <h3 class="textoDescripcionIndex">Dejate tentar por la más rica pastelería y sus increíbles diseños</h3>
@@ -90,12 +116,12 @@
         <div>
             <ul>
                 <li class="textoFooter">
-                    <a href="./pages/productos.html">productos</a>
+                    <a href="./pages/productos.html" class="link-dark">productos</a>
                 </li>
                 <li class="textoFooter">
-                    <a href="./pages/pedidos.html">pedidos</a></li>
+                    <a href="./pages/pedidos.html" class="link-dark">pedidos</a></li>
                 <li class="textoFooter">
-                    <a href="./pages/nosotros.html">nosotros</a>
+                    <a href="./pages/nosotros.html" class="link-dark">nosotros</a>
                 </li>
             </ul>
         </div>
@@ -103,10 +129,10 @@
             <h4 class="textoFooter__titulo">Contacto</h4>
             <ul>
                 <li class="textoFooter">
-                    <a href="https://walink.co/a67b8a">+5493415046876</a>
+                    <a href="https://walink.co/a67b8a" class="link-dark">+5493415046876</a>
                 </li>
                 <li class="textoFooter">
-                    <a href="mailto:clementinaracciatti@gmail.com">ciatti@pasteleria.com.ar</a>
+                    <a href="mailto:clementinaracciatti@gmail.com" class="link-dark">ciatti@pasteleria.com.ar</a>
                 </li>
             </ul>
         </div>
@@ -120,5 +146,7 @@
         </div>
     </footer>
 <!-- end footer -->
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

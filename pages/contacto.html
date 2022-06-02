@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/Favicon.png">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Contacto</title>
 </head>
 <body class="grid">
 <!-- navigation bar -->
 <header class="header">
     <div>
-        <a href="./index.html">
+        <a href="../index.html">
             <img class="logo" src="../img/Logo-1.png" alt="logo">
         </a>
     </div>
@@ -20,15 +22,15 @@
         <nav class="textoNav">
             <ul>
                 <li class="listaNav">
-                    <a href="./productos.html">productos</a>
+                    <a href="./productos.html" class="link-dark">productos</a>
                 </li>
                 <li class="listaNav">
-                    <a href="./pedidos.html">pedidos</a></li>
+                    <a href="./pedidos.html" class="link-dark">pedidos</a></li>
                 <li class="listaNav">
-                    <a href="./nosotros.html">nosotros</a>
+                    <a href="./nosotros.html" class="link-dark">nosotros</a>
                 </li>
                 <li class="listaNav">
-                    <a href="./contacto.html">contacto</a>
+                    <a href="./contacto.html" class="link-dark">contacto</a>
                 </li>
             </ul>
         </nav>
@@ -40,17 +42,22 @@
             <h2 class="tituloIndex">Contacto</h2> 
         </div>
         <div class="seccionesContacto">
-            <section>
-                <form>
-                    <label class="textoDescripcion" for="nombre_apellido">Nombre y apellido:</label> <br>
-                    <input type="text" name="nombre_apellido" /> <br>
-                    <label class="textoDescripcion" for="telefono">Teléfono:</label> <br>	
-                    <input type="text" name="telefono" /> <br>
-                    <label class="textoDescripcion"  for="consulta">Dejanos tu consulta</label> <br>	
-                    <textarea placeholder="consulta"></textarea> <br>
-                    <input class="button" type="submit" value="Enviar">
-                </form>
-            </section>
+            <div>
+                <p class="textoTituloCentrado">¿Te quedó alguna duda?</p>
+            </div>
+            <div class="seccionesContactoCard">
+                <section>
+                    <form>
+                        <label class="textoDescripcion" for="nombre_apellido">Nombre y apellido:</label> <br>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder=""> <br>
+                        <label class="textoDescripcion" for="telefono">Teléfono:</label> <br>	
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder=""> <br>
+                        <label class="textoDescripcion"  for="consulta">Dejanos tu consulta</label> <br>	
+                        <textarea class="form-control" aria-label="With textarea"></textarea> <br>
+                        <input class="button" type="submit" value="Enviar">
+                    </form>
+                </section>
+            </div>
         </div>
     </main>
 <!-- footer -->
@@ -60,30 +67,30 @@
             <img class="logo" src="../img/Logo-1.png" alt="logo">
         </a> 
     </div>
-    <div class="contenedoresFooterProductos">
+    <div>
         <ul>
             <li class="textoFooter">
-                <a href="./productos.html">productos</a>
+                <a href="./productos.html" class="link-dark">productos</a>
             </li>
             <li class="textoFooter">
-                <a href="./pedidos.html">pedidos</a></li>
+                <a href="./pedidos.html" class="link-dark">pedidos</a></li>
             <li class="textoFooter">
-                <a href="./nosotros.html">nosotros</a>
+                <a href="./nosotros.html" class="link-dark">nosotros</a>
             </li>
         </ul>
     </div>
-    <div class="contenedoresFooterContacto">
+    <div>
         <h4 class="textoFooter__titulo">Contacto</h4>
         <ul>
             <li class="textoFooter">
-                <a href="https://walink.co/a67b8a">+5493415046876</a>
+                <a href="https://walink.co/a67b8a" class="link-dark">+5493415046876</a>
             </li>
             <li class="textoFooter">
-                <a href="mailto:clementinaracciatti@gmail.com">ciatti@pasteleria.com.ar</a>
+                <a href="mailto:clementinaracciatti@gmail.com" class="link-dark">ciatti@pasteleria.com.ar</a>
             </li>
         </ul>
     </div>
-    <div class="contenedoresFooterRedes">
+    <div>
         <a href="https://www.instagram.com/ciatti.pasteleria/">
             <img src="../img/icon-i.png" alt="icono instagram">
         </a> 
@@ -93,5 +100,7 @@
     </div>
 </footer>
 <!-- end footer -->
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
