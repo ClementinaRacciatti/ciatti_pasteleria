@@ -15,11 +15,12 @@
     --font-titel: 'Pacifico', cursive;
 
     /* Fonts Sizes */
-    --text-xlarge: 90px;
-    --text-large: 70px;
-    --text-medium: 23px;
-    --text-small: 17px;
-    --text-smaller: 15px;
+    --text-xlarge: 7rem;
+    --text-large: 5rem;
+    --text-xmedium: 3rem;
+    --text-medium: 1.5rem;
+    --text-small: 1.3rem;
+    --text-smaller: 1rem;
 
 }
 /* Reset CSS */
@@ -55,7 +56,7 @@ header {
 
 .textoNav{
     font-family: var(--font-principal);
-    font-size: var(--text-medium);
+    font-size: var(--text-small);
     color: #000;
     list-style-type: none;
     text-align: center;
@@ -89,6 +90,10 @@ main {
 a {
     text-decoration: none;
     color: var(--text-color);
+}
+
+ul {
+    padding: 0px;
 }
 
 .tituloIndex{
@@ -254,7 +259,6 @@ a {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    width: 100%;
     justify-content: center;
     padding: 30px;
     margin: 20px;
@@ -373,7 +377,7 @@ a {
 
 .textoFooter__titulo{
     font-family: 'Montserrat', sans-serif;
-    font-size: var(--text-medium);
+    font-size: var(--text-small);
     color: var(--text-color);
     text-align: left;
     font-weight:bolder;
@@ -417,7 +421,7 @@ a {
         margin: 20px 10px 20px 10px;
     }
     .tituloIndex{
-        font-size: var(--text-large);
+        font-size: var(--text-xmedium);
     }
     .imgPastelera {
         width: 100%;
@@ -429,7 +433,7 @@ a {
         margin: 60px 10px 60px 10px;
     }
     .seccionesContactoCard {
-        width: 100%;
+        width: 300px;
         margin: 0px;
     }
     .seccionesContacto {
