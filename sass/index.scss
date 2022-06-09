@@ -1,0 +1,18 @@
+/* Externos */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Misc */
+@import "./misc/variables.scss";
+@import "./misc/normailize.scss";
+
+/* Partial */
+@import "./partials/header.scss";
+@import "./partials/footer.scss";
+
+/* Views */
+@import "./views/contacto.scss";
+@import "./views/nosotros.scss";
+@import "./views/pedidos.scss";
+@import "./views/productos.scss";
+@import "./views/home.scss"

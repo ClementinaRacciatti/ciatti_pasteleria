@@ -1,0 +1,25 @@
+.todoFooter{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 30px;
+    justify-content: space-around;
+    grid-area: footer;
+    column-gap: 10px;
+}
+
+.textoFooter{
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--text-smaller);
+    color: var(--text-color);
+    list-style-type: none;
+    text-align: left;
+    
+    &__titulo{
+        font-family: 'Montserrat', sans-serif;
+        font-size: var(--text-small);
+        color: var(--text-color);
+        text-align: left;
+        font-weight:bolder;
+    }
+}

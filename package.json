@@ -1,0 +1,26 @@
+{
+  "name": "ciattipasteleria-racciatti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss sass/index.scss css/translated.css",
+    "watch-sass": "nodemone -e scss -x \"npm run build-sass\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClementinaRacciatti/ciatti_pasteleria.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClementinaRacciatti/ciatti_pasteleria/issues"
+  },
+  "homepage": "https://github.com/ClementinaRacciatti/ciatti_pasteleria#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

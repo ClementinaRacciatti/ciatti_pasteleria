@@ -1,0 +1,45 @@
+/* Externos */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* Misc */
+:root {
+  /* Colours */
+  --primary:#95D0B1;
+  --secondary: #37AE88;
+  --text-color: #424242;
+  --box-color:#F0F0F0;
+  /* Fonts Families */
+  --font-principal: 'Montserrat', sans-serif;
+  --font-titel: 'Pacifico', cursive;
+  /* Fonts Sizes */
+  --text-xlarge: 7rem;
+  --text-large: 5rem;
+  --text-xmedium: 3rem;
+  --text-medium: 1.5rem;
+  --text-small: 1.3rem;
+  --text-smaller: 1rem; }
+
+/* Partial */
+.todoFooter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 30px;
+  justify-content: space-around;
+  grid-area: footer;
+  column-gap: 10px; }
+
+.textoFooter {
+  font-family: 'Montserrat', sans-serif;
+  font-size: var(--text-smaller);
+  color: var(--text-color);
+  list-style-type: none;
+  text-align: left; }
+  .textoFooter__titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--text-small);
+    color: var(--text-color);
+    text-align: left;
+    font-weight: bolder; }
+
+/* Views */
