@@ -89,12 +89,14 @@
 }
 
 /* Mobile Styles */
+@media screen and (max-width: 600px) {
+    .indexTitulo {
+        font-size: $text-xmedium;
+    }
+}
 
 @media screen and (max-width: 425px) {
     .productosCards {
         flex-direction: column;
-    }
-    .indexTitulo{
-        font-size: $text-xmedium;
     }
 }
