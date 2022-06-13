@@ -1,0 +1,31 @@
+/* Header */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End Header */
+
+/* Nav Bar */
+
+.logo{
+    max-width: 85px;
+}
+
+.navLista{
+    display: inline;
+    margin: 45px;
+}
+
+.navTexto{
+    font-family: $font-principal;
+    font-size: $text-small;
+    color: #000;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* End Nav Bar */

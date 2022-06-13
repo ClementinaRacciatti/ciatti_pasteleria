@@ -1,0 +1,93 @@
+.rotadorInterno__Fondo {
+    background-image: url("../img/imgrotador-2.jpg");
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.pedidos {
+    &Titulo{
+        font-family: $font-titel;
+        font-size: $text-large;
+        color: #ffffff;
+        text-shadow: 0.5px 0.5px 2px #000;
+        text-align: center;
+    }
+    &Secciones {
+        justify-content: center;
+        padding: 50px;
+        background-color: $box-color;
+        margin: 50px 70px 100px 70px;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-self: center;
+        align-content: center;
+    }
+}
+
+.texto{
+    &__TituloCentrado{
+    font-family: $font-principal;
+    font-size: $text-medium;
+    color: $secondary;
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+    }
+    &__Descripcion{
+        font-family: $font-principal;
+        font-size: $text-small;
+        color: $text-color;
+        text-align: left;
+        margin: 20px 10px 10px 10px;
+    }
+}
+
+.gridPedidos__ImagenesProductos{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 50px;
+    column-gap: 20px;
+    padding: 40px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 1024px) {
+
+    .gridPedidos__ImagenesProductos{
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+}
+
+@media screen and (max-width: 673px) {
+
+    .gridPedidos__ImagenesProductos{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+    .pedidosTitulo{
+        font-size: $text-xmedium;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .pedidosTitulo{
+        font-size: $text-xmedium;
+    }
+    .pedidosSecciones{
+        margin: 35px 40px 80px 40px;
+    }
+}

@@ -1,25 +1,50 @@
-.todoFooter{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 30px;
-    justify-content: space-around;
-    grid-area: footer;
-    column-gap: 10px;
+/* Footer */
+
+.logo{
+    max-width: 85px;
 }
 
-.textoFooter{
-    font-family: 'Montserrat', sans-serif;
-    font-size: var(--text-smaller);
-    color: var(--text-color);
-    list-style-type: none;
-    text-align: left;
-    
-    &__titulo{
+.footer{
+    &Todo{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 30px;
+        justify-content: space-around;
+        grid-area: footer;
+        column-gap: 10px;
+    }
+    &Texto{
         font-family: 'Montserrat', sans-serif;
-        font-size: var(--text-small);
-        color: var(--text-color);
+        font-size: $text-smaller;
+        color: $text-color;
+        list-style-type: none;
+        text-align: left;
+    }
+    &Texto__Titulo{
+        font-family: 'Montserrat', sans-serif;
+        font-size: $text-small;
+        color: $text-color;
         text-align: left;
         font-weight:bolder;
+    }
+}
+
+/* End Footer */
+
+/* Mobile Styles */
+
+@media screen and (max-width: 425px) {
+    .footerTodo{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        row-gap: 25px;
+    }
+    .footerTexto{
+        text-align: center;
+    }
+    .footerTexto__Titulo{
+        text-align: center;
     }
 }
