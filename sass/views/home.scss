@@ -1,3 +1,10 @@
+@mixin flex{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+    flex-wrap: wrap;
+}
+
 .grid{
     display: grid;
     grid-template-areas: 
@@ -12,14 +19,13 @@
 .index {
     &Titulo{
         font-family: $font-titel;
-        font-size: $text-xlarge;
         color: #ffffff;
         text-shadow: 0.5px 0.5px 2px #000;
         text-align: center;
     }
     &Texto{
         font-family: $font-principal;
-        font-size: 25px;
+        font-size: map-get($fonts, medium);
         color: $text-color;
         text-align: center;
         padding: 40px;
@@ -41,10 +47,7 @@
 }
 
 .productosCard {
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: center;
+    @include flex;
     padding: 30px;
     &__box {
         display: flex;
@@ -64,7 +67,7 @@
 }
 
 .button {
-    background-image: linear-gradient(to right, #95d0b1 , #39c37b);
+    background-color: #39c37b;
     border: none;
     color: white;
     padding: 12px 30px;
@@ -77,6 +80,20 @@
     text-transform: uppercase;
     margin: 30px 0px 0px 0px;
 }
+
+.button-medio {
+    @extend .button;
+    background-color: #b5f2d2;
+    color: #000;
+}
+
+@each $name, $size in $fonts {
+    .indexTitulo-#{$name} {
+        font-size: $size;
+        font-family: $font-titel;
+    }
+}
+    
 
 /* Animations */
 @keyframes aparecer {
