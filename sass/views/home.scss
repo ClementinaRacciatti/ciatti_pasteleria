@@ -18,10 +18,11 @@
 
 .index {
     &Titulo{
-        font-family: $font-titel;
         color: #ffffff;
-        text-shadow: 0.5px 0.5px 2px #000;
         text-align: center;
+        font-family: $font-titel;
+        font-size: $text-xlarge;
+        text-shadow: 0.5px 0.5px 2px #000;
     }
     &Texto{
         font-family: $font-principal;
@@ -90,7 +91,6 @@
 @each $name, $size in $fonts {
     .indexTitulo-#{$name} {
         font-size: $size;
-        font-family: $font-titel;
     }
 }
     
@@ -109,6 +109,9 @@
 @media screen and (max-width: 600px) {
     .indexTitulo {
         font-size: $text-xmedium;
+    }
+    .indexTexto {
+        font-size: map-get($fonts, small);
     }
 }
 

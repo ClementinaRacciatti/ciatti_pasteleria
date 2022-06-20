@@ -81,13 +81,19 @@
     .pedidosTitulo{
         font-size: $text-xmedium;
     }
+    .texto__Descripcion{
+        font-size: $text-smaller;
+        text-align: center;
+    }
+    .texto__TituloCentrado{
+        font-size: $text-small;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 425px) {
-    .pedidosTitulo{
-        font-size: $text-xmedium;
-    }
     .pedidosSecciones{
-        margin: 35px 40px 80px 40px;
+        margin: 35px 30px 55px 30px;
+        padding: 30px;
     }
 }

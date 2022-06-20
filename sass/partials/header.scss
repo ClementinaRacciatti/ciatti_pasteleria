@@ -29,3 +29,17 @@
 }
 
 /* End Nav Bar */
+
+/* Mobile Styles */
+@media screen and (max-width: 991px) {
+    .header{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .logo{
+        width: 75px;
+    }
+}

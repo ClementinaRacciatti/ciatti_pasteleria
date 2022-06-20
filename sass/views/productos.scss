@@ -10,15 +10,15 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: center;
-        padding: 50px;
+        justify-content: space-around;
         background-color: $box-color;
         border-radius: 20px;
-        margin: 80px;
+        padding: 70px;
+        margin: 100px;
     }
     &Internos__Img {
         width: 300px;
-        margin: 10px;
+        margin: 20px;
     }
 }
 
@@ -40,15 +40,15 @@
     font-size: $text-medium;
     color: $secondary;
     text-align: left;
-    margin: 20px 0px 10px 40px;
     text-transform: uppercase;
+    margin: 20px;
     }
     &__Descripcion{
         font-family: $font-principal;
         font-size: $text-small;
         color: $text-color;
         text-align: left;
-        margin: 20px 0px 10px 40px;
+        margin: 20px;
     }
 }
 
@@ -69,6 +69,7 @@
     .productosTexto__Descripcion{
         text-align: center;
         margin: 20px 10px 20px 10px;
+        font-size: $text-smaller;
     }
 }
 
