@@ -23,8 +23,8 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
-        padding: 30px;
-        margin: 60px 120px 60px 120px;
+        padding: 20px;
+        margin: 50px 100px 50px 100px;
         align-items: center;
     }
 }
@@ -33,6 +33,7 @@
     &__Titulo{
     font-family: $font-principal;
     font-size: $text-medium;
+    font-weight: 600;
     color: $secondary;
     text-align: left;
     margin: 20px 10px 10px 10px;
@@ -48,27 +49,38 @@
 }
 
 .pastelera{
-    &Img {
-        width: 300px;
+    &__Img {
         margin-left: 60px;
     }
-    &Contenedor {
+    &__Contenedor {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
+    animation-duration: 5s;
+    animation-name: aparecer;
     }
 }
 
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
+
 /* Mobile Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     .nosotrosSecciones {
         flex-direction: column;
         padding: 30px;
         margin: 60px 15px 60px 15px;
         flex-wrap: wrap;
     }
-    .pasteleraImg {
+    .pastelera__Img {
         width: 100%;
         margin: 20px 10px 10px 10px;
         align-items: center;

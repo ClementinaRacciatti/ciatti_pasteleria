@@ -13,12 +13,15 @@
         justify-content: space-around;
         background-color: $box-color;
         border-radius: 20px;
-        padding: 70px;
+        padding: 40px;
         margin: 100px;
     }
     &Internos__Img {
-        width: 300px;
         margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -38,6 +41,7 @@
     &__Titulos{
     font-family: $font-principal;
     font-size: $text-medium;
+    font-weight:600;  
     color: $secondary;
     text-align: left;
     text-transform: uppercase;
@@ -54,34 +58,32 @@
 
 
 /* Mobile Styles */
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 900px) {
     .productosInternos__Cards {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        margin: 15px;
+        flex-direction: column;
+        padding: 30px;
     }
     .productosInternos__Img {
-        flex-wrap: wrap;
-        width: 100%;
+        margin: 0px;
     }
     .productosTexto__Titulos{
         text-align: center;
-        margin: 20px 10px 20px 10px;
+        margin: 15px 15px 0px 15px;
     }
     .productosTexto__Descripcion{
         text-align: center;
-        margin: 20px 10px 20px 10px;
+        margin: 10px;
         font-size: $text-smaller;
     }
 }
 
 @media screen and (max-width: 425px) {
 
-    .productosInternos__Img {
-        width: 100%;
-    }
-    .productosInternos__Cards {
-        flex-direction: column;
-        padding: 30px;
-        margin: 25px;
+    .productosTexto__Titulos{
+        font-size: $text-small;
     }
     .productosTitulo{
         font-size: $text-xmedium;
