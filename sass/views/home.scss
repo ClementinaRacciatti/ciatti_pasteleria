@@ -105,7 +105,32 @@
     }
 }
 
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
+
 /* Mobile Styles */
+
+@media screen and (max-width: 770px) {
+    .whatsapp {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .indexTitulo {
         font-size: $text-xmedium;
@@ -113,6 +138,7 @@
     .indexTexto {
         font-size: map-get($fonts, small);
     }
+
 }
 
 @media screen and (max-width: 425px) {

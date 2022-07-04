@@ -59,12 +59,22 @@ header {
   margin-top: 25px;
   margin-bottom: 10px; }
 
+.navbar-toggler {
+  border: var(--bs-border-width) solid #fff; }
+
+.navbar-toggler-icon {
+  width: 2em;
+  height: 2em; }
+
 /* End Nav Bar */
 /* Mobile Styles */
 @media screen and (max-width: 991px) {
   .header {
     flex-direction: row;
-    justify-content: space-evenly; } }
+    justify-content: space-evenly; }
+  .navTexto {
+    font-size: 1rem;
+    text-align: left; } }
 
 @media screen and (max-width: 425px) {
   .logo {
@@ -99,7 +109,7 @@ header {
 
 /* End Footer */
 /* Mobile Styles */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .footerTodo {
     flex-direction: column;
     align-items: center;
@@ -255,7 +265,11 @@ header {
 
 @media screen and (max-width: 425px) {
   .nosotrosTitulo {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .textoNosotros__Titulo {
+    font-size: 1.3rem; }
+  .textoNosotros__Descripcion {
+    font-size: 1rem; } }
 
 .rotadorInterno__Fondo {
   background-image: url("../img/imgrotador-2.jpg");
@@ -325,8 +339,6 @@ header {
   .gridPedidos__ImagenesProductos {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto); }
-  .pedidosTitulo {
-    font-size: 3rem; }
   .texto__Descripcion {
     font-size: 1rem;
     text-align: center; }
@@ -337,7 +349,9 @@ header {
 @media screen and (max-width: 425px) {
   .pedidosSecciones {
     margin: 35px 30px 55px 30px;
-    padding: 30px; } }
+    padding: 30px; }
+  .pedidosTitulo {
+    font-size: 3rem; } }
 
 .productosTitulo {
   font-family: "Pacifico", cursive;
@@ -508,7 +522,27 @@ header {
   100% {
     opacity: 1; } }
 
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100; }
+
+.whatsapp-icon {
+  margin-top: 13px; }
+
 /* Mobile Styles */
+@media screen and (max-width: 770px) {
+  .whatsapp {
+    display: none; } }
+
 @media screen and (max-width: 600px) {
   .indexTitulo {
     font-size: 3rem; }

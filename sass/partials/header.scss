@@ -28,6 +28,14 @@
     margin-bottom: 10px;
 }
 
+.navbar-toggler{
+    border: var(--bs-border-width) solid #fff
+}
+.navbar-toggler-icon {
+    width: 2em;
+    height: 2em;
+}
+
 /* End Nav Bar */
 
 /* Mobile Styles */
@@ -35,6 +43,10 @@
     .header{
         flex-direction: row;
         justify-content: space-evenly;
+    }
+    .navTexto{
+        font-size: $text-smaller;
+        text-align: left;
     }
 }
 
