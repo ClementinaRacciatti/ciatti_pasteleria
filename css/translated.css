@@ -538,6 +538,9 @@ header {
 .whatsapp-icon {
   margin-top: 13px; }
 
+.carousel-caption {
+  top: 15%; }
+
 /* Mobile Styles */
 @media screen and (max-width: 770px) {
   .whatsapp {
