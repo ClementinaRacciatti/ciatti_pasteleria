@@ -11,6 +11,13 @@
 }
 
 .pedidos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+
     &Titulo{
         font-family: $font-titel;
         font-size: $text-large;
@@ -20,15 +27,11 @@
     }
     &Secciones {
         justify-content: center;
-        padding: 50px;
+        padding: 20px;
         background-color: $box-color;
-        margin: 50px 70px 100px 70px;
+        margin: 0px 20px 50px 20px;
         border-radius: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-self: center;
-        align-content: center;
+        width: 400px;
     }
 }
 
@@ -39,14 +42,24 @@
     font-weight: 600;
     color: $secondary;
     text-align: center;
-    margin: 10px;
+    margin-top: 60px;
+    margin-bottom: 30px;
     text-transform: uppercase;
     }
+    &__TituloInterno{
+        font-family: $font-principal;
+        font-size: $text-small;
+        font-weight: 600;
+        color: $secondary;
+        text-align: center;
+        margin: 10px;
+        text-transform: uppercase;
+        }
     &__Descripcion{
         font-family: $font-principal;
         font-size: $text-small;
         color: $text-color;
-        text-align: left;
+        text-align: center;
         margin: 20px 10px 10px 10px;
     }
 }
